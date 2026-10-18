@@ -323,53 +323,113 @@ def _ts(mm, ss, frac) -> int:
     return int(mm) * 60_000 + int(ss) * 1000 + ms
 
 
-def is_translated_lrc(synced_lyrics: str) -> bool:
-    """Returns True if the LRC string contains duplicate timestamps (embedded translations)."""
-    if not synced_lyrics:
-        return False
-    seen_timestamps = set()
-    for raw in synced_lyrics.strip().splitlines():
-        raw = raw.strip()
-        pos = 0
-        stamps = []
-        while True:
-            m = TS.match(raw, pos)
-            if not m:
-                break
-            stamps.append(m.group(0))
-            pos = m.end()
-        if stamps:
-            ts_key = "".join(stamps)
-            if ts_key in seen_timestamps:
-                return True
-            seen_timestamps.add(ts_key)
-    return False
+# ── translation avoidance: keep the ORIGINAL lyrics of bilingual LRC files ─────
+# Bilingual files come in several shapes; all of them are handled here, for every source:
+#   1. translation on a second line with the same (or nearly the same) timestamp
+#   2. translation lines on their own timestamps, alternating with the original lines
+#   3. "original / translation" or "original (translation)" on a single line
+_EN_STOP = frozenset("the a an and or but of in on for with from is are was were be been i you she it we they "
+                     "me my your his her our their this that these those not will would can could if what "
+                     "when where who how all just".split())
 
 
-def sanitize_lrc(synced_lyrics: str) -> str:
-    """Strips out duplicate timestamp lines, keeping only the first (original) line."""
-    if not synced_lyrics:
-        return ""
-    seen_timestamps = set()
-    cleaned_lines = []
-    for line in synced_lyrics.strip().splitlines():
-        raw = line.strip()
-        pos = 0
-        stamps = []
-        while True:
-            m = TS.match(raw, pos)
-            if not m:
-                break
-            stamps.append(m.group(0))
-            pos = m.end()
-        if stamps:
-            ts_key = "".join(stamps)
-            if ts_key not in seen_timestamps:
-                seen_timestamps.add(ts_key)
-                cleaned_lines.append(line)
+def english_score(text: str) -> float:
+    """Share of words that are common English function words (0 for non-Latin text)."""
+    toks = re.findall(r"[A-Za-z']+", text)
+    if not toks or not _is_latin(text):
+        return 0.0
+    return sum(t.lower() in _EN_STOP for t in toks) / len(toks)
+
+
+def _is_english(text: str) -> bool:
+    return bool(text) and english_score(text) >= 0.25
+
+
+def _strip_same_time(lines: list) -> list:
+    """Lines that start within 250 ms of each other are original + translation: keep one."""
+    groups: list = []
+    for l in lines:
+        g = groups[-1] if groups else None
+        if (g and l.text and g[0].text and l.start - g[0].start <= 250
+                and not (l.singer and g[0].singer and l.singer != g[0].singer)):   # a duet is not a translation
+            g.append(l)
         else:
-            cleaned_lines.append(line)
-    return "\n".join(cleaned_lines)
+            groups.append([l])
+    pairs = [g for g in groups if len(g) > 1]
+    if not pairs:
+        return lines
+    # Usually the original comes first. If the 2nd line is clearly *less* English than the 1st
+    # across the whole file, the translation was listed first - keep the last one instead.
+    d = sum(english_score(g[1].text) - english_score(g[0].text) for g in pairs) / len(pairs)
+    keep = -1 if d <= -0.12 else 0
+    return [g[keep] for g in groups]
+
+
+def _strip_alternating(lines: list) -> list:
+    """Original, translation, original, translation ... on different timestamps.
+
+    One of the two interleaved sets (odd or even lines) is mostly English while the other is not:
+    drop that whole set. Judging by set, not by line, also catches one-word translations."""
+    text = [l for l in lines if l.text]
+    if len(text) < 8:
+        return lines
+    share = []
+    for parity in (0, 1):
+        part = text[parity::2]
+        share.append(sum(_is_english(l.text) for l in part) / len(part))
+    p = 0 if share[0] >= share[1] else 1
+    if share[p] >= 0.6 and share[1 - p] <= 0.2:
+        drop = {id(l) for l in text[p::2]}
+        return [l for l in lines if id(l) not in drop]
+    return lines
+
+
+_INLINE_TRANSLATION = (re.compile(r"^(?P<o>.+?)\s+[/|]\s+(?P<t>.+)$"),
+                       re.compile(r"^(?P<o>.+?)\s*[\(\[（](?P<t>[^()\[\]（）]{4,})[\)\]）]\s*$"))
+
+
+def _strip_inline(lines: list) -> list:
+    """'original / translation' and 'original (translation)' -> 'original'.
+
+    A file only counts as bilingual when at least a third of its lines have the pattern *and*
+    the second part reads as a translation (English, or Latin script after a non-Latin original);
+    then every line of that pattern is cut. Ordinary ad-libs such as '(oh oh)' are left alone."""
+    text_lines = [l for l in lines if l.text]
+    parsed = []                                     # (line, pattern index, original, looks like translation)
+    for l in text_lines:
+        for k, rx in enumerate(_INLINE_TRANSLATION):
+            m = rx.match(l.text)
+            if m:
+                o, t = m.group("o").strip(), m.group("t").strip()
+                looks = bool(o) and (english_score(t) - english_score(o) >= 0.2
+                                     or (not _is_latin(o) and _is_latin(t)))
+                parsed.append((l, k, o, looks))
+                break
+    for k in range(len(_INLINE_TRANSLATION)):
+        mine = [p for p in parsed if p[1] == k]
+        if sum(p[3] for p in mine) >= max(3, 0.35 * len(text_lines)):
+            for l, _, o, _ in mine:                 # whole pattern, so one-word translations go too
+                if o:
+                    l.text, l.words = o, []
+            break
+    return lines
+
+
+def strip_translations(lines: list) -> list:
+    """lines: sorted by start time. Returns them without translation lines."""
+    if len(lines) < 4:
+        return lines
+    return _strip_inline(_strip_alternating(_strip_same_time(lines)))
+
+
+def is_translated_lrc(text: str) -> bool:
+    """True if this LRC text is bilingual (contains an embedded translation)."""
+    if not text:
+        return False
+    raw = parse_lrc(text, 0, strip_translation=False)
+    before = [l.text for l in raw]
+    out = strip_translations(list(raw))
+    return len(out) != len(raw) or [l.text for l in raw] != before
 
 
 def _parse_enhanced(body: str) -> tuple[list, str]:
@@ -394,7 +454,7 @@ def _parse_enhanced(body: str) -> tuple[list, str]:
     return words, "".join(w.text for w in words)
 
 
-def parse_lrc(text: str, duration_ms: int = 0) -> list:
+def parse_lrc(text: str, duration_ms: int = 0, strip_translation: bool = True) -> list:
     lines: list[Line] = []
     offset = 0
     for raw in text.splitlines():
@@ -428,10 +488,10 @@ def parse_lrc(text: str, duration_ms: int = 0) -> list:
             ln = Line(st, 0, body, singer, "", [Word(w.start, w.end, w.text) for w in words]
                       if len(stamps) == 1 else [])
             lines.append(ln)
-    return finalize(lines, duration_ms, offset)
+    return finalize(lines, duration_ms, offset, strip_translation)
 
 
-def finalize(lines: list, duration_ms: int = 0, offset: int = 0) -> list:
+def finalize(lines: list, duration_ms: int = 0, offset: int = 0, strip_translation: bool = False) -> list:
     lines.sort(key=lambda l: l.start)
     out: list[Line] = []
     for l in lines:
@@ -442,6 +502,8 @@ def finalize(lines: list, duration_ms: int = 0, offset: int = 0) -> list:
         if not l.text and out and not out[-1].text:
             continue                              # collapse consecutive blank gaps
         out.append(l)
+    if strip_translation:
+        out = strip_translations(out)
     for i, l in enumerate(out):
         nxt = out[i + 1].start if i + 1 < len(out) else (duration_ms or l.start + 6000)
         l.end = nxt if nxt > l.start else l.start + 3000
@@ -748,20 +810,14 @@ def provider_lrclib(track: Track) -> Optional[Lyrics]:
                  for r in recs if r.get("syncedLyrics")]
         ranked_recs = ranked(track, withl)
 
-        # 1. First preference: Look for an entry without duplicate timestamps (untranslated original)
-        for rec in ranked_recs:
-            synced = rec["syncedLyrics"]
-            if not is_translated_lrc(synced):
-                lines = parse_lrc(synced, track.duration_ms)
+        # 1. prefer a record that has no embedded translation, 2. else the best one (translation stripped)
+        for want_clean in (True, False):
+            for rec in ranked_recs:
+                if want_clean and is_translated_lrc(rec["syncedLyrics"]):
+                    continue
+                lines = parse_lrc(rec["syncedLyrics"], track.duration_ms)
                 if lines:
                     return Lyrics(lines, "lrclib")
-
-        # 2. Fallback: If only translated entries exist, sanitize and parse the best entry
-        for rec in ranked_recs:
-            synced = sanitize_lrc(rec["syncedLyrics"])
-            lines = parse_lrc(synced, track.duration_ms)
-            if lines:
-                return Lyrics(lines, "lrclib")
 
         return None
 
@@ -1159,7 +1215,7 @@ def _race(canon: Track, names: list) -> tuple:
 
 
 # ── cache: one file per title, several entries (artist / length variants) ─────
-CACHE_VERSION = 3
+CACHE_VERSION = 4                                     # v4: purge entries cached with translations
 _CACHE_LOCK = threading.Lock()
 
 
@@ -1949,7 +2005,8 @@ class LyricsView(QWidget):
         self._rebuild()
         self._browse = None
         self._idx = self._find_idx(self._t_active())
-        self._pos_f = self._act_f = self._follow_target()
+        self._pos_f = self._follow_target()
+        self._act_f = float(max(self._idx, -1)) if not lyr.msg else 0.0      # lit line, not the centring offset
         self._vel = self._act_v = 0.0
         self._text_alpha = 0.0
         self._dirty = True
