@@ -1,0 +1,786 @@
+{
+  "Soja Zara — Madhushree": {
+    "key": "afec90c41896b8bcdff5",
+    "title": "Soja Zara",
+    "artist": "Madhushree",
+    "lines": 44,
+    "tags": "#F"
+  },
+  "Bulleya — Vishal-Shekhar": {
+    "key": "9d90d37c0c3fdf410ac1",
+    "title": "Bulleya",
+    "artist": "Vishal-Shekhar",
+    "lines": 71,
+    "tags": "#M"
+  },
+  "Mast Magan — Arijit Singh": {
+    "key": "c722a880c6ee122142de",
+    "title": "Mast Magan",
+    "artist": "Arijit Singh",
+    "lines": 58,
+    "tags": "MMFMFMMMMDDDDDDMDDDDDMFFFFDDDDDDMDDDDDDMMMMFMDDDDDDDDDDDDD"
+  },
+  "Aashiyan — Pritam": {
+    "key": "acfcaba2054cfa978870",
+    "title": "Aashiyan",
+    "artist": "Pritam",
+    "lines": 50,
+    "tags": "FFFFFFFFMMMMMMMMMMMFFFFFFFFFFFFMMMMMMMMMMMFFFFMMMM"
+  },
+  "Bol Na Halke Halke — Shankar-Ehsaan-Loy": {
+    "key": "01a2ba6610d0dd16e270",
+    "title": "Bol Na Halke Halke",
+    "artist": "Shankar-Ehsaan-Loy",
+    "lines": 62,
+    "tags": "-MMMMMMMMFFFMMMMFFFFMMFFMMMFFFFMMMMMMFFMMM-FFFFMMFFDDDDDDDDDDD"
+  },
+  "Samjhawan — Jawad Ahmad": {
+    "key": "1d8a6a6ae4b61d581823",
+    "title": "Samjhawan",
+    "artist": "Jawad Ahmad",
+    "lines": 50,
+    "tags": "DDDDDDDDMMMMMMMMMMMMMMMMMMMMMMMMMFFFFFFFFFFFFFFFMM"
+  },
+  "Manwa Laage — Vishal-Shekhar": {
+    "key": "2a27b9ba3b82326c127c",
+    "title": "Manwa Laage",
+    "artist": "Vishal-Shekhar",
+    "lines": 49,
+    "tags": "-FFFFFFFFMMMFFFFM-FFFMMMFFMFFFFFFFF-MMMMMMFFFFFFF"
+  },
+  "Chahun Main Ya Naa — Palak Muchhal": {
+    "key": "aa6b1db5695a74014cf0",
+    "title": "Chahun Main Ya Naa",
+    "artist": "Palak Muchhal",
+    "lines": 50,
+    "tags": "MMMMFFFFMMMMMMDDDDMMMMMMMM-FFFFFFFFFFFFFFFFFF-MMMM"
+  },
+  "Teri Ore — Pritam": {
+    "key": "ee14b604f6bb35ed57f4",
+    "title": "Teri Ore",
+    "artist": "Pritam",
+    "lines": 49,
+    "tags": "FFFFFFFFFFFMMMMFFFFDDDDMMMMMMFFFFFDDDDFFFFFFFDDDD"
+  },
+  "Main Rang Sharbaton Ka — Atif Aslam": {
+    "key": "ad0b9e5fa0dadec44baf",
+    "title": "Main Rang Sharbaton Ka",
+    "artist": "Atif Aslam",
+    "lines": 71,
+    "tags": "MMMMMMMMMMMMMMMMMMMMMMMFFFFFFFFFFFFMMMMMMMMMMFFFFFFMMMMMMMMMMMMMMFFFFFF"
+  },
+  "Ghar More Pardesiya (Kalank) — Pritam": {
+    "key": "27cb44f4821d4b246772",
+    "title": "Ghar More Pardesiya (Kalank)",
+    "artist": "Pritam",
+    "lines": 76,
+    "tags": "FFMMMMMMFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+  },
+  "Thodi Der — Farhan Saeed": {
+    "key": "e31b8391ca554ae21804",
+    "title": "Thodi Der",
+    "artist": "Farhan Saeed",
+    "lines": 43,
+    "tags": "FFFFFFFFFFFFFFMMMMMMMMMMFFDDDDMMMFFFFMMMMMF"
+  },
+  "Saibo — Sachin-Jigar": {
+    "key": "9ff71b6f0e1f1d261717",
+    "title": "Saibo",
+    "artist": "Sachin-Jigar",
+    "lines": 26,
+    "tags": "FFFFFFDDDDMFMFFFDDDDDDDDDD"
+  },
+  "Sajde — Shankar-Ehsaan-Loy": {
+    "key": "f09e8ab18d2347deabf2",
+    "title": "Sajde",
+    "artist": "Shankar-Ehsaan-Loy",
+    "lines": 51,
+    "tags": "MMMMMMMMFMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMFFFFFFDMMMM"
+  },
+  "Piya O Re Piya — Sachin-Jigar": {
+    "key": "49f533ee0e1fbf81ebf7",
+    "title": "Piya O Re Piya",
+    "artist": "Sachin-Jigar",
+    "lines": 33,
+    "tags": "FFFFFMMMMMMMMMMMFFFDMMMMMFFFDMMMM"
+  },
+  "Ambarsariya — Sona Mohapatra": {
+    "key": "58ebac9b90606d999875",
+    "title": "Ambarsariya",
+    "artist": "Sona Mohapatra",
+    "lines": 63,
+    "tags": "#F"
+  },
+  "Barso Re — A.R. Rahman": {
+    "key": "42fb1f57717b20e8e619",
+    "title": "Barso Re",
+    "artist": "A.R. Rahman",
+    "lines": 62,
+    "tags": "#F"
+  },
+  "Hawayein — Pritam": {
+    "key": "53cfeb51c4c034a0ec37",
+    "title": "Hawayein",
+    "artist": "Pritam",
+    "lines": 44,
+    "tags": "#M"
+  },
+  "Zehnaseeb — Vishal-Shekhar": {
+    "key": "057352fa3a3275bd98ff",
+    "title": "Zehnaseeb",
+    "artist": "Vishal-Shekhar",
+    "lines": 26,
+    "tags": "FFMMFFFMMFFFFFFMMMFDDDFMMF"
+  },
+  "Tere Bina — A.R. Rahman": {
+    "key": "97e5360fad9c3fb4faff",
+    "title": "Tere Bina",
+    "artist": "A.R. Rahman",
+    "lines": 50,
+    "tags": "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMFFMMMMMMFMFMMMMMMMM"
+  },
+  "O Rangrez — Shankar-Ehsaan-Loy": {
+    "key": "e65618b628a0c7bc96e2",
+    "title": "O Rangrez",
+    "artist": "Shankar-Ehsaan-Loy",
+    "lines": 55,
+    "tags": "MMMMMMMMMFFFFFFFFMMMMFFMMFFFFMMMMFFFMMFFFFDMMFFMMMMFFFF"
+  },
+  "Dagabaaz Re — Rahat Fateh Ali Khan": {
+    "key": "e39894a0239fcb8abc26",
+    "title": "Dagabaaz Re",
+    "artist": "Rahat Fateh Ali Khan",
+    "lines": 43,
+    "tags": "MMMMMMMMMMMMM-MMMMFFMMMMMMMMMMMMMFFMMMMMMMM"
+  },
+  "Duniyaa (From \"Luka Chuppi\") — Akhil": {
+    "key": "16f28336a59179c8d734",
+    "title": "Duniyaa (From \"Luka Chuppi\")",
+    "artist": "Akhil",
+    "lines": 40,
+    "tags": "MMMMMMMMMM-MMMMMMMMMMMMMFFFFFFFFFFFFMMMM"
+  },
+  "Jeene Laga Hoon — Sachin-Jigar": {
+    "key": "60f257f0e0e1c8709ad3",
+    "title": "Jeene Laga Hoon",
+    "artist": "Sachin-Jigar",
+    "lines": 30,
+    "tags": "MM-MMMMMMD-MMFFFFMMD-MMFFFFMMD"
+  },
+  "Tere Naina — Shankar Mahadevan": {
+    "key": "df43b19258ab18205292",
+    "title": "Tere Naina",
+    "artist": "Shankar Mahadevan",
+    "lines": 35,
+    "tags": "MMMMFFFFMMMFFFFFMMFMMMFFFMMMFFFFMMM"
+  },
+  "Sawaar Loon — Monali Thakur": {
+    "key": "bab577f20fa5dc760bb0",
+    "title": "Sawaar Loon",
+    "artist": "Monali Thakur",
+    "lines": 33,
+    "tags": "#F"
+  },
+  "Tum Jo Aaye — Pritam": {
+    "key": "c826e13fd69cc4cc649d",
+    "title": "Tum Jo Aaye",
+    "artist": "Pritam",
+    "lines": 39,
+    "tags": "MMMMFMMMMFFFMMMMMMFFMMMMMMFFFFFMMMMMMMM"
+  },
+  "Sajdaa — Shankar-Ehsaan-Loy": {
+    "key": "3b2aa93f16f313137632",
+    "title": "Sajdaa",
+    "artist": "Shankar-Ehsaan-Loy",
+    "lines": 57,
+    "tags": "FFFFMMMMMDDDDFFDDDDDDMMMMMMFFDDDDDDFFMMMMFFDDDDDDMFMMDDDD"
+  },
+  "Soch Na Sake — Amaal Mallik": {
+    "key": "b45a42f4f6811261376e",
+    "title": "Soch Na Sake",
+    "artist": "Amaal Mallik",
+    "lines": 37,
+    "tags": "FMMMMMMMMMMMMMMMMFFFFMMMMFFFFMMMMMMMM"
+  },
+  "Bahara — Vishal-Shekhar": {
+    "key": "0628070b6c2d543331d7",
+    "title": "Bahara",
+    "artist": "Vishal-Shekhar",
+    "lines": 79,
+    "tags": "FFFFFFFFFFFFFFFFFF-FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+  },
+  "Sheila Ki Jawani — Vishal-Shekhar": {
+    "key": "19c606e252f43a7e322d",
+    "title": "Sheila Ki Jawani",
+    "artist": "Vishal-Shekhar",
+    "lines": 101,
+    "tags": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFMFFFFFMMMMFFFFFFFFFFFFFFFFFMMMMMMMMMMMFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+  },
+  "Surili Akhiyon Wale — Sajid-Wajid": {
+    "key": "d75136538538b3f86b8b",
+    "title": "Surili Akhiyon Wale",
+    "artist": "Sajid-Wajid",
+    "lines": 44,
+    "tags": "#M"
+  },
+  "Isq Risk — Sohail Sen": {
+    "key": "1452e9ed4cacb1f67cb8",
+    "title": "Isq Risk",
+    "artist": "Sohail Sen",
+    "lines": 55,
+    "tags": "#M"
+  },
+  "Falak Tak — Vishal-Shekhar": {
+    "key": "7386fc05870e6d47cbcd",
+    "title": "Falak Tak",
+    "artist": "Vishal-Shekhar",
+    "lines": 44,
+    "tags": "MMMMMMMMFFFFMMFFMMMMMMFFMMFFMMDDDDMMDDDDDDDD"
+  },
+  "Tu Jaane Na — Pritam": {
+    "key": "9c50b419a3c3625bbc47",
+    "title": "Tu Jaane Na",
+    "artist": "Pritam",
+    "lines": 63,
+    "tags": "#M"
+  },
+  "Sunn Raha Hai — Ankit Tiwari": {
+    "key": "8249e3aa7c165e9a0c6b",
+    "title": "Sunn Raha Hai",
+    "artist": "Ankit Tiwari",
+    "lines": 51,
+    "tags": "#M"
+  },
+  "Phir Mohabbat — Mohammed Irfan": {
+    "key": "c8c22dc1274be16e7aba",
+    "title": "Phir Mohabbat",
+    "artist": "Mohammed Irfan",
+    "lines": 36,
+    "tags": "#M"
+  },
+  "Hasi - Male Version — Ami Mishra": {
+    "key": "b3f838bfb95b67b26ed6",
+    "title": "Hasi - Male Version",
+    "artist": "Ami Mishra",
+    "lines": 23,
+    "tags": "#M"
+  },
+  "Hasi - Female Version — Ami Mishra": {
+    "key": "b3f838bfb95b67b26ed6",
+    "title": "Hasi - Female Version",
+    "artist": "Ami Mishra",
+    "lines": 18,
+    "tags": "#F"
+  },
+  "Baarish — Shashaa Tirupati": {
+    "key": "0abe19e5d5c2309bd764",
+    "title": "Baarish",
+    "artist": "Shashaa Tirupati",
+    "lines": 26,
+    "tags": "#M"
+  },
+  "Sun Saathiya — Divya Kumar": {
+    "key": "d52f32b7e5f1ebe301f7",
+    "title": "Sun Saathiya",
+    "artist": "Divya Kumar",
+    "lines": 37,
+    "tags": "-FFFFFFFMFFMMMMMMMMMMFFFFMMMFFFMMMMFF"
+  },
+  "Ye Ishq Hai — Pritam": {
+    "key": "3862c5fc914d80b163d4",
+    "title": "Ye Ishq Hai",
+    "artist": "Pritam",
+    "lines": 44,
+    "tags": "#F"
+  },
+  "Haule Haule — Salim–Sulaiman": {
+    "key": "feff5d187c9583ec20ec",
+    "title": "Haule Haule",
+    "artist": "Salim–Sulaiman",
+    "lines": 70,
+    "tags": "#M"
+  },
+  "Kalank - Title Track — Pritam": {
+    "key": "1594763ae9ac7132be67",
+    "title": "Kalank - Title Track",
+    "artist": "Pritam",
+    "lines": 37,
+    "tags": "#M"
+  },
+  "Laal Ishq — Sanjay Leela Bhansali": {
+    "key": "449903055c46b2e711a9",
+    "title": "Laal Ishq",
+    "artist": "Sanjay Leela Bhansali",
+    "lines": 48,
+    "tags": "#M"
+  },
+  "Ye Tune Kya Kiya — Pritam": {
+    "key": "774fa16db1243475e7c2",
+    "title": "Ye Tune Kya Kiya",
+    "artist": "Pritam",
+    "lines": 68,
+    "tags": "#M"
+  },
+  "Jogi — Yasser Desai": {
+    "key": "e5b93b2de662e6ad25c3",
+    "title": "Jogi",
+    "artist": "Yasser Desai",
+    "lines": 36,
+    "tags": "MMMMMMMMMMMMMMMMMMMMMFFFFFFFMMMMMMMM"
+  },
+  "Tujhe Kitna Chahne Lage (From \"Kabir Singh\") — Arijit Singh": {
+    "key": "4997c24d23eb7fc9dd68",
+    "title": "Tujhe Kitna Chahne Lage (From \"Kabir Singh\")",
+    "artist": "Arijit Singh",
+    "lines": 31,
+    "tags": "#M"
+  },
+  "Tere Sang Yaara — Atif Aslam": {
+    "key": "0f2c0a43f63376ac44d6",
+    "title": "Tere Sang Yaara",
+    "artist": "Atif Aslam",
+    "lines": 38,
+    "tags": "#M"
+  },
+  "Iktara — Amit Trivedi": {
+    "key": "f9d8c63636f8c6b904b2",
+    "title": "Iktara",
+    "artist": "Amit Trivedi",
+    "lines": 29,
+    "tags": "FFFFFFMFFFMMMMFFFFMFFMFFFMMMM"
+  },
+  "Paniyon Sa — Tulsi Kumar": {
+    "key": "f9ed5526a27a0b2db7f4",
+    "title": "Paniyon Sa",
+    "artist": "Tulsi Kumar",
+    "lines": 35,
+    "tags": "-MMMMFFFFMMMMMMMMMMFFFFMMMMMMMMMMMM"
+  },
+  "Chashni — Vishal-Shekhar": {
+    "key": "d4c62756048bf9c4a329",
+    "title": "Chashni",
+    "artist": "Vishal-Shekhar",
+    "lines": 61,
+    "tags": "#M"
+  },
+  "Sanu Ek Pal Chain (From \"Raid\") — Rahat Fateh Ali Khan": {
+    "key": "e9d2baaada92efe002b9",
+    "title": "Sanu Ek Pal Chain (From \"Raid\")",
+    "artist": "Rahat Fateh Ali Khan",
+    "lines": 41,
+    "tags": "#M"
+  },
+  "Tere Naina Maar Hi Daalenge — Shaan": {
+    "key": "da0806899de146a54e9b",
+    "title": "Tere Naina Maar Hi Daalenge",
+    "artist": "Shaan",
+    "lines": 49,
+    "tags": "-FFFFFMMMMMMMMFFFFFFMMMMMFFMMFFFFMMMMMMMFMMMMMMMM"
+  },
+  "Pee Loon — Pritam": {
+    "key": "ad825e9ae7eac2e09b33",
+    "title": "Pee Loon",
+    "artist": "Pritam",
+    "lines": 61,
+    "tags": "#M"
+  },
+  "I Love You — Pritam": {
+    "key": "333703ca9b2f092f18b7",
+    "title": "I Love You",
+    "artist": "Pritam",
+    "lines": 35,
+    "tags": "#M"
+  },
+  "Jalte Diye — Anweshaa": {
+    "key": "ce2972b6be396910c1c6",
+    "title": "Jalte Diye",
+    "artist": "Anweshaa",
+    "lines": 46,
+    "tags": "FFFFFFFFFFFMMMMFFFFFFFMMMMFFFFFFFMMMMMMMMMMMMM"
+  },
+  "Jab Tum Chaho — Mohammed Irfan": {
+    "key": "c11230b7ca9ca609ee7e",
+    "title": "Jab Tum Chaho",
+    "artist": "Mohammed Irfan",
+    "lines": 40,
+    "tags": "-FFFFFFMMMFFFFFFFFMMMMMFFFFMMMMFFFMFFFMM"
+  },
+  "Tum Se Hi — Pritam": {
+    "key": "85ce61f83205825af654",
+    "title": "Tum Se Hi",
+    "artist": "Pritam",
+    "lines": 25,
+    "tags": "#M"
+  },
+  "Ishq Sufiyana (Female) — Vishal-Shekhar": {
+    "key": "c0b401b655b6e167e695",
+    "title": "Ishq Sufiyana (Female)",
+    "artist": "Vishal-Shekhar",
+    "lines": 51,
+    "tags": "#F"
+  },
+  "Ishq Sufiyana (Male) — Vishal-Shekhar": {
+    "key": "c0b401b655b6e167e695",
+    "title": "Ishq Sufiyana (Male)",
+    "artist": "Vishal-Shekhar",
+    "lines": 51,
+    "tags": "#M"
+  },
+  "Hans Mat Pagli — Sonu Nigam": {
+    "key": "13bbbf32f0fb00eaf399",
+    "title": "Hans Mat Pagli",
+    "artist": "Sonu Nigam",
+    "lines": 41,
+    "tags": "MMMMMMMMMMMMMMMMMMFFFFFFFFFFFFFFFFFFMFMFM"
+  },
+  "Naina Da Kya Kasoor — Amit Trivedi": {
+    "key": "b80e6691ca26c22471f3",
+    "title": "Naina Da Kya Kasoor",
+    "artist": "Amit Trivedi",
+    "lines": 32,
+    "tags": "#M"
+  },
+  "Saathiya — A.R. Rahman": {
+    "key": "5dc7914d66e24a82788c",
+    "title": "Saathiya",
+    "artist": "A.R. Rahman",
+    "lines": 32,
+    "tags": "#M"
+  },
+  "Prem Ki Naiyya — Pritam": {
+    "key": "5485734ed5b65640f995",
+    "title": "Prem Ki Naiyya",
+    "artist": "Pritam",
+    "lines": 71,
+    "tags": "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMFFFFFFFFFFFFFFFMMMMMMMMMMMMMMMMMMMMMMMMMMM"
+  },
+  "Raanjhanaa (From \"Raanjhanaa\") — A.R. Rahman": {
+    "key": "dc0f72a780729e2e7a08",
+    "title": "Raanjhanaa (From \"Raanjhanaa\")",
+    "artist": "A.R. Rahman",
+    "lines": 64,
+    "tags": "#M"
+  },
+  "Tum Hi Ho Bandhu — Pritam": {
+    "key": "6215bb97d3165ae8a59a",
+    "title": "Tum Hi Ho Bandhu",
+    "artist": "Pritam",
+    "lines": 77,
+    "tags": "FFFFFFFFDDMMDDMMDMMDDMMFFFFFFFFFFFFDDMMDDMMDMMDDMMFFFFFFFFFFFFDDMMDDMMDMMDDMM"
+  },
+  "Tum Mile — Pritam": {
+    "key": "18ffe87483a7173b247d",
+    "title": "Tum Mile",
+    "artist": "Pritam",
+    "lines": 58,
+    "tags": "#M"
+  },
+  "Mere Dholna — Pritam": {
+    "key": "77b3df1a93a84369269f",
+    "title": "Mere Dholna",
+    "artist": "Pritam",
+    "lines": 23,
+    "tags": "FFFFFFFFFFFFFFFFMMFMFMF"
+  },
+  "Channa Mereya — Pritam": {
+    "key": "cd0b2320df6a4b6e2fd7",
+    "title": "Channa Mereya",
+    "artist": "Pritam",
+    "lines": 39,
+    "tags": "#M"
+  },
+  "Piyu Bole — Sonu Nigam": {
+    "key": "255f291ab82abe70e00e",
+    "title": "Piyu Bole",
+    "artist": "Sonu Nigam",
+    "lines": 26,
+    "tags": "FFMFMFFFMMFFFFFFFMMMMFFDDD"
+  },
+  "Tera Hone Laga Hoon — Pritam": {
+    "key": "5d1d0a75ecf1d2d128d5",
+    "title": "Tera Hone Laga Hoon",
+    "artist": "Pritam",
+    "lines": 48,
+    "tags": "FFFFMMMMMMMMMMMMMMMMFFFFMMMMMMMMFFFFMMMMMMMMMMMM"
+  },
+  "Tere Naina — Shankar-Ehsaan-Loy": {
+    "key": "01f95c020c57032f101e",
+    "title": "Tere Naina",
+    "artist": "Shankar-Ehsaan-Loy",
+    "lines": 50,
+    "tags": "#M"
+  },
+  "Sab Tera — Armaan Malik": {
+    "key": "78fcaaf2996a3beb228b",
+    "title": "Sab Tera",
+    "artist": "Armaan Malik",
+    "lines": 34,
+    "tags": "-MMFFMMMFFFF-MMMMFFFF-FFFFFFFFMMMM"
+  },
+  "Tere Liye — Atif Aslam": {
+    "key": "b099e26b91c328cbe09a",
+    "title": "Tere Liye",
+    "artist": "Atif Aslam",
+    "lines": 53,
+    "tags": "FFFFFFMMMMMMMMMMMMFFFFMMMMMMMMMMMMFFFMMMMMMMMMMMMFFFF"
+  },
+  "Tera Ban Jaunga — Akhil Sachdeva": {
+    "key": "238367f54651945baa63",
+    "title": "Tera Ban Jaunga",
+    "artist": "Akhil Sachdeva",
+    "lines": 30,
+    "tags": "FFFFMMMMMMMMFFMMMMMMMMMMMMFFFF"
+  },
+  "Nazm Nazm — Arko": {
+    "key": "4eced98404b3cf65fa8b",
+    "title": "Nazm Nazm",
+    "artist": "Arko",
+    "lines": 26,
+    "tags": "#M"
+  },
+  "Hum Mar Jayenge — Tulsi Kumar": {
+    "key": "bf201a57330c06e2c19d",
+    "title": "Hum Mar Jayenge",
+    "artist": "Tulsi Kumar",
+    "lines": 46,
+    "tags": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFMMMMMMMMMMMMMMMFF"
+  },
+  "Tumse Milke Dil Ka — Sonu Nigam": {
+    "key": "edaebf24d2abefe9f897",
+    "title": "Tumse Milke Dil Ka",
+    "artist": "Sonu Nigam",
+    "lines": 67,
+    "tags": "#M"
+  },
+  "Jiya Dhadak Dhadak Jaye — Rohail Hyatt": {
+    "key": "3d2198cb7abdace0bf87",
+    "title": "Jiya Dhadak Dhadak Jaye",
+    "artist": "Rohail Hyatt",
+    "lines": 50,
+    "tags": "#M"
+  },
+  "Humsafar — Akhil Sachdeva": {
+    "key": "e1b0fa662a139dfae938",
+    "title": "Humsafar",
+    "artist": "Akhil Sachdeva",
+    "lines": 44,
+    "tags": "FFFFFFFMMMMMMMMMMMMMMFFMMMMMMMMMMMMMMMMMMMMF"
+  },
+  "Aankhein Khuli — Jatin-Lalit": {
+    "key": "5a4f83ef9b6abaf7bdb3",
+    "title": "Aankhein Khuli",
+    "artist": "Jatin-Lalit",
+    "lines": 76,
+    "tags": "MMMMMMMMMMMMMMMM-M-MMDDMMMMMMDDMMMMDD-MMFFMMFFMDMMMMDD-FFMMFFMMMDMMMDDMMMMMD"
+  },
+  "Tere Bin (From \"Simmba\") — Rahat Fateh Ali Khan": {
+    "key": "d443aee361769fd2eec9",
+    "title": "Tere Bin (From \"Simmba\")",
+    "artist": "Rahat Fateh Ali Khan",
+    "lines": 34,
+    "tags": "MMMMMMMMMMMMMMDDFFFFMMMMFFFFMMMMMM"
+  },
+  "Khuda Jaane — Vishal-Shekhar": {
+    "key": "fc4a9078f3456407c33f",
+    "title": "Khuda Jaane",
+    "artist": "Vishal-Shekhar",
+    "lines": 51,
+    "tags": "MMMFFFMMMFFFMMMM-FFFFMMMMMMM-MMMMFFFMMMMMMMFFFMMMMM"
+  },
+  "Rabba Main Toh Mar Gaya Oye — Pritam": {
+    "key": "42cd49f5aa298d55e363",
+    "title": "Rabba Main Toh Mar Gaya Oye",
+    "artist": "Pritam",
+    "lines": 41,
+    "tags": "#M"
+  },
+  "Jab Se Tere Naina — Monty Sharma": {
+    "key": "ffc730e44cfecdb526e7",
+    "title": "Jab Se Tere Naina",
+    "artist": "Monty Sharma",
+    "lines": 43,
+    "tags": "#M"
+  },
+  "Kabira — Pritam": {
+    "key": "c5a8479adf124c2a87f6",
+    "title": "Kabira",
+    "artist": "Pritam",
+    "lines": 37,
+    "tags": "-FFFFFFFFFFFFFMMMMMMMMMMFFFFFFFFMMMMM"
+  },
+  "Tu Hain Toh (From \"Mr. And Mrs. Mahi\") — Bunny": {
+    "key": "33e9005293e930568e40",
+    "title": "Tu Hain Toh (From \"Mr. And Mrs. Mahi\")",
+    "artist": "Bunny",
+    "lines": 29,
+    "tags": "#M"
+  },
+  "Tera Chehra — Himesh Reshammiya": {
+    "key": "947ab3fc69c7cfcb62ea",
+    "title": "Tera Chehra",
+    "artist": "Himesh Reshammiya",
+    "lines": 31,
+    "tags": "#M"
+  },
+  "Moh Moh Ke Dhaage (Female) — Anu Malik": {
+    "key": "c0ac86f5c26b0dc2f6fc",
+    "title": "Moh Moh Ke Dhaage (Female)",
+    "artist": "Anu Malik",
+    "lines": 36,
+    "tags": "#F"
+  },
+  "Ajab Si — KK": {
+    "key": "371208374b2de2fd7e04",
+    "title": "Ajab Si",
+    "artist": "KK",
+    "lines": 20,
+    "tags": "#M"
+  },
+  "O Re Piya — Salim–Sulaiman": {
+    "key": "37a358c1c3b585891d00",
+    "title": "O Re Piya",
+    "artist": "Salim–Sulaiman",
+    "lines": 50,
+    "tags": "#M"
+  },
+  "Chand Sifarish — Jatin-Lalit": {
+    "key": "7ed52eabbdd2750c165b",
+    "title": "Chand Sifarish",
+    "artist": "Jatin-Lalit",
+    "lines": 36,
+    "tags": "#M"
+  },
+  "Ishq Wala Love — Vishal-Shekhar": {
+    "key": "23426a0152a16381c1be",
+    "title": "Ishq Wala Love",
+    "artist": "Vishal-Shekhar",
+    "lines": 47,
+    "tags": "MMMMMMMMMMMMMFFFFMMMMMMMFFFFFFFFFMMMMMMMMMMMMMM"
+  },
+  "Suno- Na Sangemarmar — Arijit Singh": {
+    "key": "8c0c232ee5af402dd175",
+    "title": "Suno- Na Sangemarmar",
+    "artist": "Arijit Singh",
+    "lines": 21,
+    "tags": "#M"
+  },
+  "Piya Aaye Na — Tulsi Kumar": {
+    "key": "e888674a8aad594fde7b",
+    "title": "Piya Aaye Na",
+    "artist": "Tulsi Kumar",
+    "lines": 30,
+    "tags": "FFFMMMMMMMMFFMMMMMMMMMMMMMMFFF"
+  },
+  "Kaun Tujhe — Palak Muchhal": {
+    "key": "9d4c34b77ff98590a92e",
+    "title": "Kaun Tujhe",
+    "artist": "Palak Muchhal",
+    "lines": 16,
+    "tags": "#F"
+  },
+  "Jashn-E-Bahaaraa — A.R. Rahman": {
+    "key": "79b1262e0345995dbeb5",
+    "title": "Jashn-E-Bahaaraa",
+    "artist": "A.R. Rahman",
+    "lines": 40,
+    "tags": "#M"
+  },
+  "Mere Haath Mein — Jatin-Lalit": {
+    "key": "5e092f67b5ec684cf863",
+    "title": "Mere Haath Mein",
+    "artist": "Jatin-Lalit",
+    "lines": 42,
+    "tags": "--MMMMMMFFFFMMFFMMMMFFFFMMMMMMFFFFMMMMFFMM"
+  },
+  "Saanson Ne — Sonu Nigam": {
+    "key": "d8cee6e0318e6e5128a6",
+    "title": "Saanson Ne",
+    "artist": "Sonu Nigam",
+    "lines": 48,
+    "tags": "-MMMMFFMMMFFMMMMFFFFFMFMMMMFFFFMMMMFMFMMFFFFMMMM"
+  },
+  "Shararat (From \"Dhurandhar\") — Shashwat Sachdev": {
+    "key": "fc6e259add44e854ac16",
+    "title": "Shararat (From \"Dhurandhar\")",
+    "artist": "Shashwat Sachdev",
+    "lines": 33,
+    "tags": "#F"
+  },
+  "Nagin Dance — Jaidev Kumar": {
+    "key": "423a4d51136485244bfa",
+    "title": "Nagin Dance",
+    "artist": "Jaidev Kumar",
+    "lines": 30,
+    "tags": "#F"
+  },
+  "Laila Main Laila — Pawni Pandey": {
+    "key": "acfb35e0bfb5ae13a25a",
+    "title": "Laila Main Laila",
+    "artist": "Pawni Pandey",
+    "lines": 53,
+    "tags": "#F"
+  },
+  "Tinku Jiya — Mamta Sharma": {
+    "key": "e5a8b9cc4eaec5e9f320",
+    "title": "Tinku Jiya",
+    "artist": "Mamta Sharma",
+    "lines": 48,
+    "tags": "-MMMMMMFFFFMMMMMFFMMMMFFFFMFFFFFFFMFFFFMMMMMFFFF"
+  },
+  "Make Some Noise For The Desi Boyz — Pritam": {
+    "key": "43a277beedcd3a50824a",
+    "title": "Make Some Noise For The Desi Boyz",
+    "artist": "Pritam",
+    "lines": 47,
+    "tags": "#M"
+  },
+  "Ainvayi Ainvayi — Salim–Sulaiman": {
+    "key": "3490c722aaab21a18970",
+    "title": "Ainvayi Ainvayi",
+    "artist": "Salim–Sulaiman",
+    "lines": 71,
+    "tags": "MMMMMMMMMMMMMMMMMM-FFFFFFFFF-MMMMFFFFFFFFFFMMMMMMMM-FFFFMMMMMMMMMFFMMMM"
+  },
+  "Kashmir Main Tu Kanyakumari — Vishal-Shekhar": {
+    "key": "4ee14cbf200a50743c18",
+    "title": "Kashmir Main Tu Kanyakumari",
+    "artist": "Vishal-Shekhar",
+    "lines": 46,
+    "tags": "MFMFDDDDMDFDFFMMDDDMDFDMMFFDDDMDFDMFMFDDDDMDFD"
+  },
+  "Saathiyaa — Shreya Ghoshal": {
+    "key": "29b242ba8d023433499a",
+    "title": "Saathiyaa",
+    "artist": "Shreya Ghoshal",
+    "lines": 54,
+    "tags": "-FFFFFFFFDDDDDDFFFFFFFFDDDDDDFFFFFFFFDDDFFFFFFFFDDDDDD"
+  },
+  "Dupatta Tera Nau Rang Da — Sonu Nigam": {
+    "key": "bcaf251ab091a311d900",
+    "title": "Dupatta Tera Nau Rang Da",
+    "artist": "Sonu Nigam",
+    "lines": 57,
+    "tags": "MMMMMMMMMMMMMMMMMMMMFFFFFFMMMMMMMMMMMFFFFMMMMMMMMMMMMMMMM"
+  },
+  "Banthan Ke — Sukhwinder Singh": {
+    "key": "d64476dd3ee87ea1ffb0",
+    "title": "Banthan Ke",
+    "artist": "Sukhwinder Singh",
+    "lines": 48,
+    "tags": "DDDDMMMMFFFFMMDDMMMMFFFFMMMMMMMMFFFFMMMMDDDDDDDD"
+  },
+  "Chunnari Chunnari — Anu Malik": {
+    "key": "e5a6e2ff0b0cb7685a12",
+    "title": "Chunnari Chunnari",
+    "artist": "Anu Malik",
+    "lines": 60,
+    "tags": "MMMMFMMFMMFFFFFFFFFFMMFFMMMMMMFFFFMMMMMMMMFFMFFFFFFFFFMMMMMM"
+  },
+  "Desi Girl — Vishal-Shekhar": {
+    "key": "dfbe0b264baa68412f20",
+    "title": "Desi Girl",
+    "artist": "Vishal-Shekhar",
+    "lines": 61,
+    "tags": "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMFFFFFFFFFFFMFMMMMMMMMMMMMMMMM"
+  }
+}
